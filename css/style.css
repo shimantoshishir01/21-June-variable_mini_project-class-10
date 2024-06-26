@@ -1,0 +1,39 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+/* global variable code start */
+:root{
+    --dark: #000000ab;
+    --white: #fff;
+    --crismon: #DC143C;
+    --dark-orange: #FF8C00;
+}
+
+/* global variable code end */
+
+body{
+    background-color: var(--dark);
+    color: var(--white);
+}
+.about{
+    padding: 20px 0 100px;
+}
+.title, .title2{
+    color: var(--dark-orange);
+}
+ .title::after{
+    content: "";
+    width: 100px;
+    height: 2px;
+    background-color: var(--crismon);
+    position: absolute;
+    display: block;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
